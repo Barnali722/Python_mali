@@ -33,8 +33,11 @@ while True:
         break
 
     elif c == 6:
-        if len(L) == int(input("index no. : ")):
-            d=L.pop()
+        print("before",len(L))
+        if len(L) == 0:
+            print("Empty Stack") 
+        
+        else: 
+            print("after",len(L))
+            d=L.pop(int(input("index no. : ")))
             print(d)
-        else:
-            print("Empty Stack")
